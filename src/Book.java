@@ -24,6 +24,3 @@ public class Book {
         this.yearOfPublish = yearOfPublish;
     }
 }
-
-
-
