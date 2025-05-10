@@ -1,12 +1,9 @@
 public class Main {
     public static void main(String[] args) {
-        String personName = "Sarah";        //какие-то переменные приходящие откуда-то
-        int personAge = 30;                 //но тут я объявлю их вручную
-        Person sarah = new Person(personName, personAge);
-//        sarah.name = "Shit";
-        System.out.println("Name = " + sarah.getName());
-        System.out.println("Age = " + sarah.getAge());
-        String abc = new String("abc");
-        System.out.println(abc);
+        Author author1 = new Author("Сергей", "Лукьяненко");
+        Author author2 = new Author("Стивен", "Кинг");
+        Book book1 = new Book("Лабиринт отражений", 1998, author1);
+        Book book2 = new Book("Тёмная башня", 1975, author2);
+        book2.setYearOfPublish(1980);
     }
 }
